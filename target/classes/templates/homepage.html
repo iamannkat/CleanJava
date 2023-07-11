@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>CleanJava Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  
+  body {
+  	font-family: "Courier", Courier, monospace;
+  }
+  
+  .jumbotron {
+    background-color: rgb(202, 105, 243);
+    color: #fff;
+    padding: 100px 25px;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #330A4D;
+    font-size: 50px;
+  }
+  .logo {
+    color: #330A4D;
+    font-size: 200px;
+  }
+ 
+  
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+  }
+  
+  /* Modify the background color */ 
+  .navbar-inverse {
+  	background-color: #330A4D;
+  }
+  
+  /* Modify brand and text color */
+  .navbar-inverse .navbar-brand,
+  .navbar-inverse .navbar-text {
+  	color: #F5EEF8;
+   }
+   
+   .navbar-brand {
+   	color: #F5EEF8;
+    font-size: 40px;
+   }
+   
+  .navbar-nav
+   {
+    color: #0D0711;
+    font-size: 20px;
+  }
+  
+  .btn-primary {
+     background-color: #330A4D;
+     font-size: 50px;
+     padding: #330A4D;
+  }
+   
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">CleanJava</a>
+    </div>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li><a th:href="@{/register/showRegistrationForm}"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+      <li><a th:href="@{/showMyLoginPage}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="jumbotron text-center">
+  <h1><strong>Clean Java</strong></h1> 
+  <p><strong>Click on this button to start checking your code.</strong></p> 
+  <br>
+  <br>
+  
+
+  <form class="form-inline"  >
+    <div class="input-group">
+      <div class="input-group-btn">
+ 	        
+		<a th:href="@{/GuestAnalysis}"
+			class="btn-primary btn-lg">
+			Start
+		</a>
+	              
+      </div>
+    </div>
+  </form>
+</div>
+
+<!--About Section-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Check your Java code according to the official conventions. </h2>
+      
+      <button class="btn btn-default btn-lg">Documentation</button>
+    </div>
+    <div class="col-sm-4">
+     
+      <svg xmlns="http://www.w3.org/2000/svg" width="170" height="170" fill="#330A4D" class="bi bi-filetype-java" viewBox="0 0 16 16">
+		  <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM1.521 15.175a1.321 1.321 0 0 1-.082-.466h.765a.577.577 0 0 0 .073.27.499.499 0 0 0 .454.246c.19 0 .33-.055.422-.164.092-.11.138-.265.138-.466V11.85h.79v2.725c0 .44-.118.774-.357 1.005-.236.23-.564.345-.984.345a1.59 1.59 0 0 1-.568-.094 1.144 1.144 0 0 1-.408-.266 1.139 1.139 0 0 1-.243-.39Zm3.972-.354-.314 1.028h-.8l1.342-3.999h.926l1.336 3.999h-.84l-.314-1.028H5.493Zm1.178-.59-.49-1.616h-.035l-.49 1.617h1.015Zm2.342 1.618h.952l1.327-3.999h-.878l-.888 3.138h-.038L8.59 11.85h-.917l1.34 3.999Zm3.087-1.028-.314 1.028h-.8l1.342-3.999h.926l1.336 3.999h-.84l-.314-1.028H12.1Zm1.178-.59-.49-1.616h-.035l-.49 1.617h1.015Z"/>
+	  </svg>
+ <!-- ===================================================================== -->
+      
+    
+<!-- ===================================================================== -->
+    </div>
+  </div>
+</div>
+<footer class="container-fluid text-center">
+  <p>Thesis Project - Anna Aikaterini Tsialiou - 2023</p>
+</footer>
+</body>
+</html>
